@@ -1,0 +1,319 @@
+.ser-section-1 {
+    background-color: rgb(234, 215, 215);
+    background: url('../assets/images/Backgroug\ image.png');
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 350px;
+    padding-top: 100px;
+    text-align: center;
+    gap: 10px;
+}
+
+.ser-section-2 {
+    display: flex;
+    flex-direction: column;
+    padding: 30px 50px;
+    background-color: white;
+}
+
+.ser-section-2-img img {
+    width: 100%;
+    height: 600px;
+    border-radius: 20px;
+    margin-top: -150px;
+}
+
+.ser-section-2-list {
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.ser-section-2-list-box {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.ser-section-2-list-box h1 {
+    font-size: 60px;
+}
+
+.ser-section-3 {
+    background-color: #FFF3F0;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    text-align: justify;
+    padding: 50px 50px 10px 50px;
+}
+
+.ser-section-3 p {
+    width: 600px;
+    font-weight: 600;
+}
+
+.ser-section-4 {
+    background-color: #FFF3F0;
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+}
+
+.ser-section-4-container {
+    background-color: #FE4D01;
+    padding: 50px 60px;
+    color: white;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.ser-section-4-container-1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.ser-section-4-container-1 p {
+    /* width: 100%; */
+    max-height: 400px;
+}
+
+.ser-section-4-container-2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px
+}
+
+.ser-section-4-box {
+    flex: 1 1 300px;
+    max-width: 360px;
+    height: 250px;
+    border: 1px solid white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 10px;
+}
+
+.ser-section-4-box h1 {
+    color: gold;
+    font-size: 50px;
+    font-weight: bolder;
+}
+
+.ser-section-4-container-3 {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.ser-section-4-container-3 button {
+    background-color: white;
+    padding: 10px 70px;
+    color: black;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+.ser-section-5 {
+    padding: 30px 50px;
+    background-color: white;
+}
+
+.ser-section-5 h2 {
+    font-weight: bold;
+    font-size: 40px;
+    margin-bottom: 50px;
+}
+
+.ser-section-5-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 10px;
+    border-radius: 15px;
+}
+
+.ser-section-5-box {
+    background-color: #F5F4EF;
+    padding: 20px 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+#ser-section-5-box-2 {
+    background-color: #FFD966;
+}
+
+#ser-section-5-box-3 {
+    border-right: 1px solid black;
+}
+
+.ser-section-6 {
+    background-color: #FFF3F0;
+    padding-top: 70px;
+}
+
+.ser-section-6 h1 {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+/* Mobile Phones (<480px) */
+@media (max-width: 480px) {
+    .ser-section-2, .ser-section-3 ,.ser-section-4,.ser-section-5,.ser-section-6 {
+        padding: 30px 30px;
+    }
+
+    .ser-section-2-img img {
+        height: 200px;
+    }
+
+    .ser-section-2-list-box h1,
+    .ser-section-4-box h1 {
+        font-size: 28px;
+    }
+
+    .ser-section-4-container h1 {
+        font-size: 22px;
+        text-align: center;
+    }
+
+    .ser-section-4-container p {
+        font-size: 15px;
+        text-align: center;
+    }
+
+    .ser-section-4-box {
+        height: 200px;
+    }
+
+    .ser-section-4-container-3 button {
+        padding: 0px;
+        height: 37px;
+        width: 100px;
+        text-align: center;
+    }
+
+    .ser-section-5-container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .ser-section-5 h2 {
+        font-size: 24px;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+    .ser-section-4-container-2 {
+        display: flex;
+    }
+
+    .ser-section-4-box {
+        flex: 1 1 200px;
+        max-width: 260px;
+        height: 250px;
+        border: 1px solid white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0px 10px;
+        text-align: center;
+    }
+
+    .ser-section-5-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        /* justify-content:flex-start; */
+        align-items: center;
+    }
+
+    .ser-section-5-box {
+        background-color: #F5F4EF;
+        width: 300px;
+    }
+
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .ser-section-4-container-2 {
+        display: flex;
+    }
+
+    .ser-section-4-box {
+        flex: 1 1 200px;
+        max-width: 260px;
+        height: 250px;
+        border: 1px solid white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0px 10px;
+        text-align: center;
+    }
+
+    .ser-section-5-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        /* justify-content:flex-start; */
+        align-items: center;
+    }
+
+    .ser-section-5-box {
+        background-color: #F5F4EF;
+        width: 300px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .ser-section-4-container-1 {
+        display: flex;
+        align-items: center;
+    }
+
+    .ser-section-4-container-1 {
+        font-size: 15px;
+    }
+
+    .ser-section-4-container-2 {
+        display: flex;
+    }
+
+    .ser-section-4-box {
+        flex: 1 1 200px;
+        max-width: 260px;
+        height: 250px;
+        border: 1px solid white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0px 10px;
+        text-align: center;
+    }
+
+    .ser-section-5-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .ser-section-5-box {
+        background-color: #F5F4EF;
+        width: 300px;
+    }
+}

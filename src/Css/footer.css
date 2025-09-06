@@ -1,0 +1,152 @@
+.footer {
+  overflow: hidden;
+}
+
+/* SECTION 1 */
+.f-section-1 {
+  background-color: #f53b03;
+  padding: 70px 100px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.f-section-1-card {
+  background-color: white;
+  color: #f53b03;
+  padding: 10px 20px;
+  max-width: 500px;   /* prevent stretching */
+  width: 100%;        /* full width on mobile */
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.f-section-1-card span {
+  color: black;
+}
+
+.f-section-1-card button {
+  background-color: #f53b03;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+}
+
+/* SECTION 2 */
+.f-section-2 {
+  background-color: #F6F4EF;
+  padding: 70px 100px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.f-section-2 .f-section-1-container-1 {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.f-section-2 .f-section-1-container-1 .col-8 p {
+  max-width: 400px;
+  width: 100%;
+  text-align: justify;
+}
+
+.f-section-2 .f-section-1-container-1 .col6 {
+  display: flex;
+  gap: 60px;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+.f-section-2 .f-section-1-container-1 .col {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.f-section-2 .f-section-1-container-1 .col6 h6,
+.f-section-2 .f-section-1-container-2 h6 {
+  font-weight: bolder;
+}
+
+.f-section-1-container-2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.f-section-1-container-2-icons {
+  display: flex;
+  gap: 20px;
+  font-size: 28px;
+}
+
+.f-input{
+  height: auto; 
+  padding: 5px 10px;
+  width: 270px;
+}
+
+/* -------------------- */
+/* RESPONSIVE BREAKPOINTS */
+/* -------------------- */
+
+/* Tablets */
+@media (max-width: 992px) {
+  .f-section-1 {
+    padding: 50px;
+  }
+  .f-section-2 {
+    padding: 50px;
+  }
+  .f-section-2 .f-section-1-container-1 {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .f-section-2 .f-section-1-container-1 .col6 {
+    justify-content: flex-start;
+    gap: 40px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .f-section-1 {
+    padding: 40px 20px;
+  }
+  .f-section-1-card {
+    flex-direction: column;
+    align-items: stretch;
+    text-align: center;
+    gap: 15px;
+  }
+  .f-input{
+    width: 250px;
+  }
+  .f-section-2 {
+    padding: 40px 20px;
+  }
+  .f-section-2 .f-section-1-container-1 .col-8 p {
+    max-width: 100%;
+  }
+  .f-section-1-container-2 {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+  .f-section-1-container-2-icons {
+    font-size: 24px;
+    gap: 15px;
+  }
+}

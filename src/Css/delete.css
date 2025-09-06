@@ -1,0 +1,180 @@
+.d-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    padding: 50px;
+    text-align: center;
+}
+
+.delete-section-1 {
+    background-color: #F6F4EF;
+    padding: 30px 40px;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 20px;
+}
+
+.d-container-1 {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+}
+
+.d-container-1 h2 {
+    font-size: 28px;
+}
+
+.d-container-1 h4 {
+    font-size: 18px;
+    font-weight: normal;
+}
+
+.d-container-info-1 {
+    background-color: white;
+    padding: 10px;
+    border: 1px solid;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.d-container-info-1 h1 {
+    font-size: 20px;
+    margin: 10px 0;
+    border-bottom: 1px solid red;
+    padding-bottom: 10px;
+}
+
+.d-container-info-1 p {
+    margin: 10px 0;
+    padding-left: 10px;
+}
+
+.d-container-2 {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 30px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.d-container-2 .form {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.form-box {
+    width: 100%;
+    background-color: gray;
+}
+
+.form-box input {
+    width: 100%;
+    height: 51px;
+    padding: 0px 10px;
+    border: 1px solid grey;
+    box-sizing: border-box;
+}
+
+.d-confirm {
+    border: 1px solid gray;
+    padding-top: 10px;
+}
+
+.d-confirm span {
+    padding: 10px;
+    color: red;
+    display: block;
+}
+
+.d-confirm p {
+    max-width: 100%;
+    width: 600px;
+    padding: 10px;
+}
+
+.btn-confirm {
+    background-color: #F6F4EF;
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px;
+}
+
+.btn-confirm button {
+    background-color: red;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+/* ======================
+   RESPONSIVE DESIGN
+   ====================== */
+
+/* Small phones (max 480px) */
+@media (max-width: 480px) {
+    .d-header {
+        padding: 20px;
+    }
+
+    .d-container-1 h2 {
+        font-size: 20px;
+    }
+
+    .d-container-1 h4 {
+        font-size: 14px;
+    }
+
+    .d-container-info-1 h1 {
+        font-size: 16px;
+    }
+
+    .d-confirm p {
+        width: 100%;
+        font-size: 14px;
+    }
+
+    .btn-confirm {
+        justify-content: center;
+    }
+}
+
+/* Tablets (481px - 768px) */
+@media (max-width: 768px) {
+    .delete-section-1 {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .d-container-2 {
+        padding: 20px;
+    }
+
+    .d-confirm p {
+        width: 100%;
+        font-size: 15px;
+    }
+}
+
+/* Small desktops (769px - 1024px) */
+@media (max-width: 1024px) {
+    .d-header {
+        padding: 30px;
+    }
+
+    .delete-section-1 {
+        justify-content: center;
+    }
+
+    .d-confirm p {
+        text-align: justify;
+        width: 100%;
+    }
+}
