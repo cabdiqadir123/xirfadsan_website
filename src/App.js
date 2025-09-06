@@ -33,7 +33,7 @@ function App() {
           <Navbar />
           <ScrollToTop />
           <Routes>
-            <Route path='/' Component={Contact} />
+            <Route path='/' Component={Home} />
             <Route path='/Home' Component={Home} />
             <Route path='/Services' exact Component={Services} />
             <Route path='/About' Component={About} />
