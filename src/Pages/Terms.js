@@ -3,74 +3,61 @@ import { Link } from "react-router-dom";
 
 function Terms() {
   return (
-    <div className="min-h-screen bg-gray-50 text-gray-800 px-4 py-12 md:px-20 lg:px-32">
-      {/* Header */}
-      <header className="mb-10">
-        <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Terms & Conditions</h1>
-        <p className="text-gray-600">
-          By using our services, you agree to these terms. Please read carefully before using our website.
-        </p>
-      </header>
+    <div className="min-h-screen bg-gray-50 py-12 px-6 lg:px-24">
+      <div className="max-w-4xl mx-auto bg-white shadow-lg rounded-2xl p-8 space-y-10">
+        {/* Header */}
+        <header className="text-center">
+          <h1 className="text-3xl font-bold text-gray-800 mb-2">
+            Terms of Service
+          </h1>
+          <p className="text-gray-500 text-sm">Effective Date: September 6, 2025</p>
+        </header>
 
-      {/* Content */}
-      <main className="space-y-8">
+        {/* Terms of Service */}
         <section>
-          <h2 className="text-2xl font-semibold mb-2">1. Acceptance of Terms</h2>
-          <p className="text-gray-700">
-            By accessing or using our website, you agree to be bound by these Terms and our Privacy Policy.
-          </p>
-        </section>
+          <h2 className="text-2xl font-semibold text-gray-700 mb-4">Terms of Service</h2>
+          <div className="space-y-4 text-gray-600 leading-relaxed">
+            <h3 className="text-xl font-semibold text-gray-700">1. Use of the App</h3>
+            <p>
+              You must provide accurate information when creating your profile.
+              You may not misuse the app for fraudulent, harmful, or illegal
+              activities.
+            </p>
 
-        <section>
-          <h2 className="text-2xl font-semibold mb-2">2. Use of Services</h2>
-          <p className="text-gray-700">
-            You agree to use our services lawfully and not for any prohibited purposes, including illegal activities or violating rights of others.
-          </p>
-        </section>
+            <h3 className="text-xl font-semibold text-gray-700">2. User Content</h3>
+            <p>
+              You are responsible for any images or information you upload. Do
+              not upload harmful, offensive, or illegal content. We may remove
+              inappropriate content at our discretion.
+            </p>
 
-        <section>
-          <h2 className="text-2xl font-semibold mb-2">3. User Accounts</h2>
-          <p className="text-gray-700">
-            If you create an account, you are responsible for maintaining its confidentiality and for all activities under your account.
-          </p>
-        </section>
+            <h3 className="text-xl font-semibold text-gray-700">3. Notifications</h3>
+            <p>
+              If you enable notifications, we may send service updates. You can
+              turn them off at any time in your device settings.
+            </p>
 
-        <section>
-          <h2 className="text-2xl font-semibold mb-2">4. Intellectual Property</h2>
-          <p className="text-gray-700">
-            All content, logos, and materials are owned by us and protected under intellectual property laws.
-          </p>
-        </section>
+            <h3 className="text-xl font-semibold text-gray-700">4. Account Security</h3>
+            <p>
+              You are responsible for keeping your login credentials secure. We
+              are not responsible for unauthorized access caused by negligence.
+            </p>
 
-        <section>
-          <h2 className="text-2xl font-semibold mb-2">5. Limitation of Liability</h2>
-          <p className="text-gray-700">
-            We are not liable for any direct or indirect damages arising from your use of our website or services.
-          </p>
-        </section>
+            <h3 className="text-xl font-semibold text-gray-700">5. Limitation of Liability</h3>
+            <p>
+              While we work hard to provide a secure and reliable app, we do not
+              guarantee uninterrupted or error-free operation. We are not liable
+              for damages resulting from misuse or technical issues.
+            </p>
 
-        <section>
-          <h2 className="text-2xl font-semibold mb-2">6. Modifications</h2>
-          <p className="text-gray-700">
-            We may update these Terms at any time. Your continued use of our website constitutes acceptance of any changes.
-          </p>
+            <h3 className="text-xl font-semibold text-gray-700">6. Contact</h3>
+            <p>
+              For any questions or to request data deletion, please contact us at:{" "}
+              <span className="font-mono text-gray-800">[info@xirfadsan.com]</span>
+            </p>
+          </div>
         </section>
-
-        <section>
-          <h2 className="text-2xl font-semibold mb-2">7. Contact Us</h2>
-          <p className="text-gray-700">
-            Questions about these Terms? Reach out at 
-            <a href="mailto:support@example.com" className="text-blue-600 ml-1">support@example.com</a>.
-          </p>
-        </section>
-      </main>
-
-      {/* Footer */}
-      <footer className="mt-12 text-center">
-        <Link to="/" className="text-blue-600 font-semibold hover:underline">
-          &larr; Back to Home
-        </Link>
-      </footer>
+      </div>
     </div>
   );
 }
