@@ -3,78 +3,109 @@ import { Link } from "react-router-dom";
 
 function PrivacyPolicy() {
   return (
-    <div className="min-h-screen bg-gray-50 text-gray-800 px-4 py-12 md:px-20 lg:px-32">
-      {/* Header */}
-      <header className="mb-10">
-        <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Privacy Policy</h1>
-        <p className="text-gray-600">
-          Your privacy is important to us. This page explains how we collect, use, and protect your information.
-        </p>
-      </header>
+    <div className="min-h-screen bg-gray-50 py-12 px-6 lg:px-24">
+      <div className="max-w-4xl mx-auto bg-white shadow-lg rounded-2xl p-8 space-y-10">
+        {/* Header */}
+        <header className="text-center">
+          <h1 className="text-3xl font-bold text-gray-800 mb-2">
+            Privacy Policy & Terms of Service
+          </h1>
+          <p className="text-gray-500 text-sm">Effective Date: September 6, 2025</p>
+        </header>
 
-      {/* Content */}
-      <main className="space-y-8">
+        {/* Privacy Policy */}
         <section>
-          <h2 className="text-2xl font-semibold mb-2">1. Information We Collect</h2>
-          <p className="text-gray-700">
-            We may collect information you provide directly, such as name, email, and contact details, 
-            as well as information automatically collected like IP address and usage data.
-          </p>
+          <h2 className="text-2xl font-semibold text-gray-700 mb-4">Privacy Policy</h2>
+          <div className="space-y-4 text-gray-600 leading-relaxed">
+            <p>
+              Xirfadsan (“we,” “our,” or “us”) respects your privacy. This Privacy
+              Policy explains how we collect, use, and protect your information
+              when you use our mobile application <strong>Xirfadsan</strong>.
+            </p>
+
+            <h3 className="text-xl font-semibold text-gray-700">1. Information We Collect</h3>
+            <ul className="list-disc pl-6">
+              <li>Name, email, phone number, address, and gender (required for profile setup).</li>
+              <li>Optional profile image. If no image is uploaded, a default icon is used.</li>
+              <li>Device token for notifications (if enabled).</li>
+            </ul>
+
+            <h3 className="text-xl font-semibold text-gray-700">2. How We Use Your Information</h3>
+            <ul className="list-disc pl-6">
+              <li>Create and manage your user profile.</li>
+              <li>Provide and improve services in the app.</li>
+              <li>Send important notifications (if you allow).</li>
+            </ul>
+
+            <h3 className="text-xl font-semibold text-gray-700">3. Data Storage and Security</h3>
+            <p>
+              Your data is processed through our backend at{" "}
+              <span className="font-mono text-gray-800">https://back-end-for-xirfadsan.onrender.com/</span>
+              and securely stored in a MySQL database hosted on Railway. All data
+              transmission uses <strong>HTTPS encryption</strong>. We do not sell or
+              share your data with third parties.
+            </p>
+
+            <h3 className="text-xl font-semibold text-gray-700">4. User Rights</h3>
+            <ul className="list-disc pl-6">
+              <li>Access and update your information.</li>
+              <li>Request deletion of your account and personal data.</li>
+              <li>Disable notifications anytime in your device settings.</li>
+            </ul>
+
+            <h3 className="text-xl font-semibold text-gray-700">5. Children’s Privacy</h3>
+            <p>
+              Our services are not directed to children under 13. We do not
+              knowingly collect data from children.
+            </p>
+          </div>
         </section>
 
+        {/* Terms of Service */}
         <section>
-          <h2 className="text-2xl font-semibold mb-2">2. How We Use Your Information</h2>
-          <p className="text-gray-700">
-            Your information helps us improve our services, communicate with you, personalize your experience, 
-            and ensure compliance with legal obligations.
-          </p>
-        </section>
+          <h2 className="text-2xl font-semibold text-gray-700 mb-4">Terms of Service</h2>
+          <div className="space-y-4 text-gray-600 leading-relaxed">
+            <h3 className="text-xl font-semibold text-gray-700">1. Use of the App</h3>
+            <p>
+              You must provide accurate information when creating your profile.
+              You may not misuse the app for fraudulent, harmful, or illegal
+              activities.
+            </p>
 
-        <section>
-          <h2 className="text-2xl font-semibold mb-2">3. Data Security</h2>
-          <p className="text-gray-700">
-            We implement reasonable security measures to protect your data. 
-            However, no method of transmission over the internet is completely secure.
-          </p>
-        </section>
+            <h3 className="text-xl font-semibold text-gray-700">2. User Content</h3>
+            <p>
+              You are responsible for any images or information you upload. Do
+              not upload harmful, offensive, or illegal content. We may remove
+              inappropriate content at our discretion.
+            </p>
 
-        <section>
-          <h2 className="text-2xl font-semibold mb-2">4. Sharing With Third Parties</h2>
-          <p className="text-gray-700">
-            We may share your information with trusted service providers to operate our services. 
-            We do not sell your personal information to third parties.
-          </p>
-        </section>
+            <h3 className="text-xl font-semibold text-gray-700">3. Notifications</h3>
+            <p>
+              If you enable notifications, we may send service updates. You can
+              turn them off at any time in your device settings.
+            </p>
 
-        <section>
-          <h2 className="text-2xl font-semibold mb-2">5. Your Rights</h2>
-          <p className="text-gray-700">
-            You may request access to, correction, or deletion of your personal data at any time by contacting us.
-          </p>
-        </section>
+            <h3 className="text-xl font-semibold text-gray-700">4. Account Security</h3>
+            <p>
+              You are responsible for keeping your login credentials secure. We
+              are not responsible for unauthorized access caused by negligence.
+            </p>
 
-        <section>
-          <h2 className="text-2xl font-semibold mb-2">6. Changes to This Policy</h2>
-          <p className="text-gray-700">
-            We may update this Privacy Policy occasionally. All changes will be posted on this page with the effective date.
-          </p>
-        </section>
+            <h3 className="text-xl font-semibold text-gray-700">5. Limitation of Liability</h3>
+            <p>
+              While we work hard to provide a secure and reliable app, we do not
+              guarantee uninterrupted or error-free operation. We are not liable
+              for damages resulting from misuse or technical issues.
+            </p>
 
-        <section>
-          <h2 className="text-2xl font-semibold mb-2">7. Contact Us</h2>
-          <p className="text-gray-700">
-            If you have questions about this Privacy Policy, contact us at 
-            <a href="mailto:support@example.com" className="text-blue-600 ml-1">support@example.com</a>.
-          </p>
+            <h3 className="text-xl font-semibold text-gray-700">6. Contact</h3>
+            <p>
+              For any questions or to request data deletion, please contact us at:{" "}
+              <span className="font-mono text-gray-800">[info@xirfadsan.com]</span>
+            </p>
+          </div>
         </section>
-      </main>
-
-      {/* Footer */}
-      <footer className="mt-12 text-center">
-        <Link to="/" className="text-blue-600 font-semibold hover:underline">
-          &larr; Back to Home
-        </Link>
-      </footer>
+      </div>
     </div>
   );
 }
