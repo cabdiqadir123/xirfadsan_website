@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import rukun_logo from "../assets/logo/Logo (1).png";
+import logo from "../assets/logo/logo.png";
 import { Link } from "react-router-dom";
 
 function Navbar() {
@@ -20,7 +20,7 @@ function Navbar() {
     <div className="navbar-section">
       {/* Logo */}
       <div className="logo">
-        <img src={rukun_logo} alt="logo" />
+        <img src={logo} alt="logo" />
       </div>
 
       {/* Hamburger */}

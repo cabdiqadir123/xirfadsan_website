@@ -21,8 +21,8 @@ function Footer() {
             <div className='f-section-2'>
                 <div className='f-section-1-container-1'>
                     <div className='col-8'>
-                        <h6>Rukun company</h6>
-                        <p >Rukun Company is more than just a home service
+                        <h6>xirfadsan company</h6>
+                        <p >xirfadsan Company is more than just a home service
                             provider –we are a team of dedicated experts
                             committed to delivering quality services right to
                             your doorstep. From cleaning and plumbing to
@@ -46,7 +46,7 @@ function Footer() {
                     </div>
                 </div>
                 <div className='f-section-1-container-2'>
-                    <h6>Rukun.com © 2025 All Right Reserved</h6>
+                    <h6>xirfadsan.com © 2025 All Right Reserved</h6>
                     <div className='f-section-1-container-2-icons'>
                         <TbBrandLinkedin />
                         <TbBrandFacebook />
