@@ -40,7 +40,7 @@ function PrivacyPolicy() {
             <h3 className="text-xl font-semibold text-gray-700">3. Data Storage and Security</h3>
             <p>
               Your data is processed through our backend at{" "}
-              <span className="font-mono text-gray-800">https://back-end-for-xirfadsan.onrender.com/</span>
+              <span className="font-mono text-gray-800">Render </span>
               and securely stored in a MySQL database hosted on Railway. All data
               transmission uses <strong>HTTPS encryption</strong>. We do not sell or
               share your data with third parties.
