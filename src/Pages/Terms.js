@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 
 function Terms() {
   return (
@@ -53,7 +52,7 @@ function Terms() {
             <h3 className="text-xl font-semibold text-gray-700">6. Contact</h3>
             <p>
               For any questions or to request data deletion, please contact us at:{" "}
-              <span className="font-mono text-gray-800">[info@xirfadsan.com]</span>
+              <span className="font-mono text-gray-800">[info@Xirfadsan.com]</span>
             </p>
           </div>
         </section>

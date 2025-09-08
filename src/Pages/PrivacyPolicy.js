@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 
 function PrivacyPolicy() {
   return (
@@ -8,9 +7,9 @@ function PrivacyPolicy() {
         {/* Header */}
         <header className="text-center">
           <h1 className="text-3xl font-bold text-gray-800 mb-2">
-            Privacy Policy
+            Privacy Policy & Terms of Service
           </h1>
-          <p className="text-gray-500 text-sm">Effective Date: September 6, 2025</p>
+          <p className="text-gray-500 text-sm">Effective Date: September 7, 2025</p>
         </header>
 
         {/* Privacy Policy */}
@@ -25,8 +24,8 @@ function PrivacyPolicy() {
 
             <h3 className="text-xl font-semibold text-gray-700">1. Information We Collect</h3>
             <ul className="list-disc pl-6">
-              <li>Name, email, phone number, address, and gender (required for profile setup).</li>
-              <li>Optional profile image. If no image is uploaded, a default icon is used.</li>
+              <li>Name, email address, phone number, address, and gender (required for profile).</li>
+              <li>Optional profile image. If no image is uploaded, a default icon will be used.</li>
               <li>Device token for notifications (if enabled).</li>
             </ul>
 
@@ -37,7 +36,16 @@ function PrivacyPolicy() {
               <li>Send important notifications (if you allow).</li>
             </ul>
 
-            <h3 className="text-xl font-semibold text-gray-700">3. Data Storage and Security</h3>
+            <h3 className="text-xl font-semibold text-gray-700">3. Payment Information</h3>
+            <p>
+              Payments in Xirfadsan are processed through Horumud’s USSD service.
+              The app <strong>does not collect or store your PIN or card information</strong>.
+              Your device initiates the payment, and we only receive the transaction status
+              (successful or cancelled) via the Horumud API to confirm your payment.
+              No sensitive payment data is stored on our servers.
+            </p>
+
+            <h3 className="text-xl font-semibold text-gray-700">4. Data Storage and Security</h3>
             <p>
               Your data is processed through our backend at{" "}
               <span className="font-mono text-gray-800">Render </span>
@@ -46,14 +54,14 @@ function PrivacyPolicy() {
               share your data with third parties.
             </p>
 
-            <h3 className="text-xl font-semibold text-gray-700">4. User Rights</h3>
+            <h3 className="text-xl font-semibold text-gray-700">5. User Rights</h3>
             <ul className="list-disc pl-6">
               <li>Access and update your information.</li>
               <li>Request deletion of your account and personal data.</li>
               <li>Disable notifications anytime in your device settings.</li>
             </ul>
 
-            <h3 className="text-xl font-semibold text-gray-700">5. Children’s Privacy</h3>
+            <h3 className="text-xl font-semibold text-gray-700">6. Children’s Privacy</h3>
             <p>
               Our services are not directed to children under 13. We do not
               knowingly collect data from children.
