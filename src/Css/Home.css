@@ -190,7 +190,9 @@
 }
 
 .home-section-4-card img {
+    width: 90px;
     height: 80px;
+    border-radius: 6px;
 }
 
 .home-section-4-card span {
@@ -653,6 +655,11 @@
 .home-section-10-lists-box button {
     color: #f53b03;
     border-bottom: 1px solid #f53b03;
+}
+
+.ser-section-6{
+    padding: 70px 0px 70px 0px;
+    background-color: #FFD966;
 }
 
 @media (max-width:599px) {

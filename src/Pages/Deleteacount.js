@@ -46,12 +46,18 @@ function Deleteacount() {
                             What will be deleted?
                         </h2>
                         <ul className="list-disc pl-5 text-gray-600 space-y-2">
+                            <li>All your personal details</li>
                             <li>All Bookings</li>
                             <li>All Complaints</li>
                             <li>All Notifications</li>
-                            <li>All Invoices</li>
-                            <li>Subscriptions</li>
+                            <li>All reviews</li>
+                            <li>All favourite</li>
+
                         </ul>
+                        <div className="bg-red-50 border border-red-200 rounded-lg p-4 text-sm text-red-600">
+                            <strong>Note:</strong> If you have a confirmed booking that is still in progress with our workers,
+                            you will not be able to delete your account until the booking is completed.
+                        </div>
                     </div>
 
                     {/* Right side warning */}

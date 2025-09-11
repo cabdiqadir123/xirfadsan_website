@@ -1,29 +1,46 @@
 import React, { useState } from "react";
+import { useLocation, useNavigate } from "react-router-dom";
 import logo from "../assets/logo/logo.png";
-import { Link } from "react-router-dom";
 
 function Navbar() {
   const [active, setActive] = useState("home");
   const [isOpen, setIsOpen] = useState(false);
 
+  const navigate = useNavigate();
+  const location = useLocation();
+
   const styles = { color: "#FE4C00" };
   const style2 = { color: "black" };
 
-  const navItems = [
-    { id: "home", label: "Home", path: "Home" },
-    { id: "services", label: "Services", path: "Services" },
-    { id: "about", label: "About", path: "About" },
-    { id: "blog", label: "Blog", path: "Blog" },
-  ];
+  // Mapping nav items to their sections
+  const navSections = {
+    home: ".h-s1",
+    about: ".home-section-2-container",
+    services: ".ser-section-6",
+    testimonials: ".home-section-9",
+    contact: ".footer" // added dot
+  };
+
+  const handleNavClick = (section) => {
+    setActive(section);
+    setIsOpen(false);
+
+    if (location.pathname !== "/") {
+      // If not on Home, navigate there first
+      navigate("/", { state: { scrollTo: section } });
+    } else {
+      // Already on Home, scroll directly
+      const el = document.querySelector(navSections[section]);
+      el?.scrollIntoView({ behavior: "smooth" });
+    }
+  };
 
   return (
     <div className="navbar-section">
-      {/* Logo */}
       <div className="logo">
         <img src={logo} alt="logo" />
       </div>
 
-      {/* Hamburger */}
       <div
         className={`hamburger ${isOpen ? "open" : ""}`}
         onClick={() => setIsOpen(!isOpen)}
@@ -35,33 +52,39 @@ function Navbar() {
 
       <div className={`ul-menu ${isOpen ? "active" : ""}`}>
         <ul>
-          {navItems.map((item) => (
-            <Link
-              key={item.id}
-              className="link"
-              to={item.path}
-              onClick={() => {
-                setActive(item.id);
-                setIsOpen(false);
-              }}
-            >
-              <li style={active === item.id ? styles : style2}>
-                {item.label}
-              </li>
-            </Link>
-          ))}
+          <li
+            style={active === "home" ? styles : style2}
+            onClick={() => handleNavClick("home")}
+          >
+            Home
+          </li>
+          <li
+            style={active === "about" ? styles : style2}
+            onClick={() => handleNavClick("about")}
+          >
+            About
+          </li>
+          <li
+            style={active === "services" ? styles : style2}
+            onClick={() => handleNavClick("services")}
+          >
+            Services
+          </li>
+          <li
+            style={active === "testimonials" ? styles : style2}
+            onClick={() => handleNavClick("testimonials")}
+          >
+            Testimonials
+          </li>
         </ul>
+
         <div className="contact-button mobile-only">
-          <Link className="link" to="Contact" style={{ color: "white" }}>
-            <button>Contact</button>
-          </Link>
+          <button onClick={() => handleNavClick("contact")}>Contact</button>
         </div>
       </div>
 
       <div className="contact-button desktop-only">
-        <Link className="link" to="Contact" style={{ color: "white" }}>
-          <button>Contact</button>
-        </Link>
+        <button onClick={() => handleNavClick("contact")}>Contact</button>
       </div>
     </div>
   );

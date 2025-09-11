@@ -35,11 +35,6 @@ function App() {
           <Routes>
             <Route path='/' Component={Home} />
             <Route path='/Home' Component={Home} />
-            <Route path='/Services' exact Component={Services} />
-            <Route path='/About' Component={About} />
-            <Route path='/Blog' Component={Blog} />
-            <Route path="/Blogarticles/:id" element={<Blogarticles />} />
-            <Route path='/Contact' Component={Contact} />
             <Route path='/PrivacyPolicy' Component={PrivacyPolicy} />
             <Route path='/Terms' Component={Terms} />
             <Route path='/Deleteacount' Component={Deleteacount} />
