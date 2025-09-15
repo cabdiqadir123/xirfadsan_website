@@ -46,16 +46,7 @@ function PrivacyPolicy() {
               The service only processes your email or phone number to deliver the OTP and does not access any other personal information.
             </p>
 
-            <h3 className="text-xl font-semibold text-gray-700">3. Payment Information</h3>
-            <p>
-              Payments in Xirfadsan are processed through Horumud’s USSD service.
-              The app <strong>does not collect or store your PIN or card information</strong>.
-              Your device initiates the payment, and we only receive the transaction status
-              (successful or cancelled) via the Horumud API to confirm your payment.
-              No sensitive payment data is stored on our servers.
-            </p>
-
-            <h3 className="text-xl font-semibold text-gray-700">4. Data Storage and Security</h3>
+            <h3 className="text-xl font-semibold text-gray-700">3. Data Storage and Security</h3>
             <p>
               Your data is processed through our backend at{" "}
               <span className="font-mono text-gray-800">Render </span>
@@ -68,7 +59,7 @@ function PrivacyPolicy() {
               OTP codes and sensitive authentication data are temporary and not stored permanently.
             </p>
 
-            <h3 className="text-xl font-semibold text-gray-700">5. User Rights</h3>
+            <h3 className="text-xl font-semibold text-gray-700">4. User Rights</h3>
             <ul className="list-disc pl-6">
               <li>Access and update your information.</li>
               <li>Request deletion of your account and personal data.</li>
